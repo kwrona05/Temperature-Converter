@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #5F9EA0;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.converter {
+    width: 40%;
+    padding-top: 300px;
+}
+
+button {
+    font-family: Impact;
+    margin: 10px 10px;
+    font-size: 32px;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+
+h1 {
+    font-family: Marker Felt, fantasy;
+    font-size: 50px;
+}
+
+.result {
+    font-family: Impact;
+    font-size: 32px;
+    color: tomato;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+}
+
+.input {
+    width: 50%;
+    height: 30px;
+    font-size: 18px;
+}
