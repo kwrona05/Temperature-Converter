@@ -12,8 +12,8 @@ function convert() {
     if(spanOne && spanOne.textContent === 'C') {
         if (input) {
         let inputValue = input.value
-        let FDegree: number = inputValue * 1.8 + 32
-        let roundF: number = Math.round(FDegree * 10) / 10
+        let FDegree = parseFloat(inputValue) * 1.8 + 32
+        let roundF  = Math.round(FDegree * 10) / 10
         
         if (paragraph) {
         paragraph.textContent = `${roundF}`
@@ -22,7 +22,7 @@ function convert() {
     } else {
         if(input && paragraph) {
         let inputValue = input.value
-        let CDegree: number = (inputValue - 32) * 0.55
+        let CDegree: number = (parseFloat(inputValue) - 32) * 0.55
         let roundC = Math.round(CDegree * 10) / 10
         paragraph.textContent = `${roundC}`
         }
