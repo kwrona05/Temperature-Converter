@@ -8,7 +8,6 @@ const ConvButton: HTMLButtonElement | null = document.querySelector('.convert')
 const resetButton: HTMLButtonElement | null  = document.querySelector('.reset')
 const swapButton: HTMLButtonElement | null = document.querySelector('.swap')
 
-
 function convert() {
     if(spanOne && spanOne.textContent === 'C') {
         if (input) {
