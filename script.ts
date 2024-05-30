@@ -22,7 +22,7 @@ function convert() {
     } else {
         if(input && paragraph) {
         let inputValue = input.value
-        let CDegree: number = (parseFloat(inputValue) - 32) * 0.55
+        let CDegree: number = (parseFloat(inputValue) - 32) * (5 / 9)
         let roundC = Math.round(CDegree * 10) / 10
         paragraph.textContent = `${roundC}`
         }
